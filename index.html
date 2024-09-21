@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="https://avatars.githubusercontent.com/u/140477055">
+        <title>xgzyoの主页</title>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+            }
+            body {
+                background-repeat: no-repeat;
+                background-image: linear-gradient(to right bottom, #a2fdf8, #88b2f8);
+            }
+            h1, h2, h3, h4, h5, h6 {
+                margin: 0;
+                padding: 0;
+            }
+            a {
+                color: inherit;
+                text-decoration: inherit;
+            }
+            .main {
+                max-height: calc(100dvh - 36px) !important;
+                box-sizing: border-box;
+                overflow: auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                max-width: 600px;
+                border-radius: 3.75rem !important;
+                background: linear-gradient(145deg, #cbd3ff, #abb1e5) !important;
+                box-shadow: 10% 10% 20% #a2a7d8, -10% -10% 20% #dbe3ff !important;
+            }
+            .main::-webkit-scrollbar {
+                display: none;
+            }
+            .xzgyo {
+                text-align: center;
+                color: #333;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 24px;
+            }
+            .title {
+                font-size: 40px;
+                margin: 0;
+                padding: 0;
+            }
+            .avatar {
+                height: 75px;
+                border-radius: 999px;
+            }
+            .description {
+                font-size: 24px;
+                color: #777;
+                margin-left: 8px;
+            }
+            .box {
+                border-radius: 1.8rem;
+                background: linear-gradient(145deg, #acd2ff, #91b0e4);
+                box-shadow: 10% 10% 20% #89a7d7, -10% -10% 20% #b9e1ff;
+                padding: 20px 24px;
+                backdrop-filter: blur(16px);
+            }
+            .box-title {
+                margin: 0;
+                padding: 0;
+            }
+            dl.list-row-box {
+                display: flex;
+                overflow: hidden;
+                margin: 16px 0 0 0;
+            }
+            dl.list-row-box dd {
+                border-radius: .75rem;
+                background-color: #f6f8fa;
+                padding: 8px 12px;
+                margin: 0 8px;
+                width: max-content;
+            }
+            dl.list-row-box dd:hover {
+                background-color: #eff2f5;
+            }
+            .dialog {
+                display: block;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                padding: 24px 16px 20px 16px;
+                border-radius: 24px;
+                z-index: 1000;
+                box-sizing: border-box;
+                max-width: 100dvw;
+                width: 475px;
+                box-shadow:0 0 0 9999px #0006;
+                -webkit-box-shadow:0 0 0 9999px #0006;
+                -moz-box-shadow:0 0 0 9999px #0006;
+                -ms-box-shadow:0 0 0 9999px #0006;
+                -o-box-shadow:0 0 0 9999px #0006;
+            }
+            .dialog-title {
+                display: flex;
+                align-items: center;
+                margin-top: -.5em;
+                gap: 6px;
+            }
+            .dialog-title svg {
+                width: auto;
+                height: 2.4rem;
+            }
+            .dialog-close-button {
+                float: right;
+                cursor: pointer;
+                font-size: 2rem;
+                margin: -20px 0 0 0;
+            }
+            .dialog-content {
+                font-size: large;
+                margin: 4px 8px 24px 8px;
+            }
+            .dialog-btn-group {
+                float: right;
+                box-sizing: border-box;
+                margin: 0 !important;
+            }
+            .dialog-ok-button {
+                box-sizing: border-box;
+                color: white !important;
+                margin: 0 0 0 8px;
+                cursor: pointer;
+                font-size: large;
+                background-color: #0071e3;
+                padding: 4px 10px 6px 10px;
+                border-radius: 16px;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                vertical-align: top;
+            }
+        </style>
+        <script>
+            function 纸飞机() {
+                document.getElementById('纸飞机').style.display = "block";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main box">
+            <div class="xzgyo"><img src="https://avatars.githubusercontent.com/u/140477055" class="avatar"><h1 class="title">xgzyoの主页</h1></div>
+            <p class="description">青，出于蓝而胜于蓝。冰，水为之而寒于水。而<b style="font-size:xx-large;color:darkorchid;">奋斗</b>，是万物之根源...</p>
+            <div class="box">
+                <h3 class="box-title">可以委托的业务：</h3>
+                <dl class="list-row-box">
+                    <dd>短信代轰炸</dd>
+                    <dd>DDoS代攻击</dd>
+                </dl>
+                <hr width="100%" color="deepskyblue" style="margin:16px 0;">
+                <h3 class="box-title">联系我:</h3>
+                <dl class="list-row-box">
+                    <dd id="tg"><a title="来纸飞机上找我干业务吧（有料哒）\n或者闲聊吧" onclick="纸飞机()">TG: @xzgyo</a></dd>
+                </dl>
+            </div>
+            <p style="margin-left:8px;">&copy; 2024 @xzgyo(Github and Telegram's username). All Right Reserved.</p>
+        </div>
+        <div class="dialog" id="纸飞机" style="display:none;">
+            <p class="dialog-close-button" onclick="document.getElementById('纸飞机').style.display='none'" tabindex="2">&times;</p>
+            <div class="dialog-title">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+                </svg>
+                <h1>提示/Tips</h1>
+            </div>
+            <p class="dialog-content">同志，如果没手滑，那么劳烦大神再点一下 <b>确认</b> 按钮<br>Man, if no hand scroll, please disturb big god again press a down <b>确认</b> button.<br><s><b>这英语翻译是来搞笑的，反正没人看。。。</b></s></p>
+            <div class="dialog-btn-group">
+                <a href="https://t.me/xzgyo" class="dialog-ok-button" tabindex="1" target="_blank">确认</a>
+            </div>
+        </div>
+    </body>
+</html>
